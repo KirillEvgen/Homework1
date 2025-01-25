@@ -104,7 +104,7 @@ button {
     background: rgb(188, 236, 48);
     flex-wrap: wrap;
     overflow: hidden;
-    max-height: 87px;
+    max-height: 88px;
 }
 
 .scrollbar__text {
