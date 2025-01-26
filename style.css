@@ -104,7 +104,7 @@ button {
     background: rgb(188, 236, 48);
     flex-wrap: wrap;
     overflow: hidden;
-    max-height: 88px;
+    max-height: 87px;
 }
 
 .scrollbar__text {
@@ -152,7 +152,7 @@ button {
     max-width: 788px;
 }
 
-.img__games {
+.game-cards {
     max-height: 1060px;
     max-width: 1200px;
     display: grid;
@@ -162,7 +162,7 @@ button {
     align-items: start;
 }
 
-.img__card {
+.game-card {
     display: flex;
     flex-direction: column;
     grid-column: span 4;
@@ -170,7 +170,7 @@ button {
     border-radius: 30px;
 }
 
-.img__item {
+.game-card__image {
     border-radius: 30px;
     height: 314px;
     background-size: cover;
@@ -178,26 +178,26 @@ button {
     background-position: center;
 }
 
-.img__card_top {
+.game-card--top {
     margin-top: -40px;
 }
 
-.img__item_1 {
+.game-card__image_type_1 {
     background: url(img/card1.svg);
 }
-.img__item_2 {
+.game-card__image_type_2 {
     background: url(img/card2.svg);
 }
-.img__item_3{
+.game-card__image_type_3{
     background: url(img/card3.svg);
 }
-.img__item_4{
+.game-card__image_type_4{
     background: url(img/card4.png);
 }
-.img__item_5{
+.game-card__image_type_5{
     background: url(img/card5.svg);
 }
-.img__item_6{
+.game-card__image_type_6{
     background: url(img/card6.svg);
 }
 
@@ -205,7 +205,7 @@ button {
     position: absolute;
 }
 
-.img__number {
+.game-card__number {
     width: 111px;
     height: 36px;
     color: rgb(32, 32, 39);
@@ -221,7 +221,7 @@ button {
     margin-bottom: 10px;
 }
 
-.img__text {
+.game-card__text {
     color: rgb(32, 32, 39);
     font-size: 32px;
     font-weight: 700;
@@ -230,9 +230,9 @@ button {
 
 }
 
-.img__card{
+.game-card{
     transition: all 1s;
 }
-.img__card:hover{
+.game-card:hover{
     transform: scale(1.10);
 }
