@@ -1,0 +1,144 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 17px; 
+    } 
+
+    .header {
+        padding-left: 58px;
+        padding-right: 56px;  
+    }
+
+
+    .header__house {
+        color: #202027;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .header__text {
+        color: #202027;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        max-width: 296px;
+    }
+
+    .header__text_weight {
+        color: #202027;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .header__button {
+        display: inline-block;
+        width: 285px;
+        height: 55px;
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 36px;
+        margin-bottom: 131px;
+        font-family: "Montserrat";
+        line-height: 55px;
+    }
+
+    .header {
+        background: #E1FF8F;
+        background-image: url(img/star1.png), url(img/star2.png), url(img/Vectormob.svg);
+        background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 100% 0px;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .scrollbar {
+        width: 3220px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(50px);
+        background: rgb(188, 236, 48);
+        flex-wrap: wrap;
+        overflow: hidden;
+        max-height: 87px;
+    }
+
+    .scrollbar__text {
+        font-family: "Montserrat";
+        color: rgb(32, 32, 39);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%;
+        text-transform: uppercase;
+        padding-right: 27px;
+        padding-left: 27px;
+    }
+
+    .scrollbar__star {
+        width: 19.339px;
+        height: 19.339px;
+    }
+
+    .games {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal; 
+        padding-top: 48px;
+    }
+
+    .games__text {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+    }
+
+    .game-cards {
+        
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 32px;
+        align-items: start;
+    }
+
+    .games__container {
+        display: none;
+    }
+
+    // .games__container {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: flex-start;
+    //     gap: 24px;
+    //     align-self: stretch;
+    //     background: #202027;
+    //     background-image: url("img/Star1.svg"), url("img/Star11.svg"), url("img/Star12.svg");
+    //     background-position: calc(100% + 91px) 24px, calc(100% + -1355px) 700px, calc(100% + -1322px) 754px;
+    //     background-repeat: no-repeat;
+    // } 
+    
+}        
