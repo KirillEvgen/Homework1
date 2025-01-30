@@ -144,7 +144,6 @@ button {
 }
 
 .game-cards {
-  max-height: 1060px;
   max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -338,7 +337,6 @@ button {
     line-height: normal;
   }
   .game-cards {
-    max-height: 1060px;
     max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -347,14 +345,6 @@ button {
     align-items: start;
   }
   .games__container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    align-self: stretch;
-    background: #202027;
-    background-image: url("img/Star1.svg"), url("img/Star11.svg"), url("img/Star12.svg");
-    background-position: calc(100% + 91px) 24px, calc(100% - 1355px) 700px, calc(100% - 1322px) 754px;
-    background-repeat: no-repeat;
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
