@@ -10,7 +10,6 @@ let w =1;
 while (w <= 5) {
     console.log(w);
     w++;
-    
 }
 // Задание 3
 let e =7;
