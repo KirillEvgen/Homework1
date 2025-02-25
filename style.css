@@ -14,7 +14,6 @@ a {
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
-  overflow-x: hidden;
 }
 
 body {
@@ -28,9 +27,9 @@ button {
 .header {
   background: #E1FF8F;
   background-image: url(img/star1.png), url(img/star2.png), url(img/starbig.svg);
-  background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), -500% -330px;
+  background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 230% -330px;
   background-repeat: no-repeat;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .header__house {
@@ -86,19 +85,18 @@ button {
   color: #000000;
   background-color: #F7F6F6;
   transition: background-color 1s;
-  overflow-x: hidden;
 }
 
 .scrollbar {
+  width: 3220px;
+  height: 90px;
   display: flex;
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
   background: rgb(188, 236, 48);
-  flex-wrap: wrap;
-  max-height: 87px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .scrollbar__text {
