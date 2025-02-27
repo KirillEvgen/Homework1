@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,39 +80,58 @@
         </div>
     </section>
     <section class="minigames center">
-        <h2 class="games">Мини-игры</h2>
-        <article class="minigames-cards">
-            <div class="minigames-card minigames-card_1 minigames-card_right">
-                <div class="minigames-card__heading" id="guessthenumber">Угадай число</div>
-                <div class="minigames-card__text">Попробуй угадать случайное <br>число от 1 до 100.</div>
-                <button class="minigames-card__button" onclick="goGame()">Играть!</button>
-            </div>
-            <div class="minigames-card minigames-card_2 minigames-card_left">
-                <div class="minigames-card__heading" id="SimpleArithmetic">Простая арифметика</div>
-                <div class="minigames-card__text">Попробуй решить простые арифметические задачи.</div>
-                <button class="minigames-card__button" onclick="arithmetic()">Играть!</button>
-             </div>
-             <div class="minigames-card minigames-card_3 minigames-card_right">
-                <div class="minigames-card__heading" id="Flipthetext">Переверни текст</div>
-                <div class="minigames-card__text">Попробуй ввести текст, который <br>будет перевернут.</div>
-                <button class="minigames-card__button" href="#">Играть!</button>
-            </div>
-            <div class="minigames-card minigames-card_4 minigames-card_left">
-                <div class="minigames-card__heading" id="Rockpaperscissors">Камень, <br> ножницы, <br> бумага</div>
-                <div class="minigames-card__text">Отвечай на вопросы викторины <br>c вариантами ответов.</div>
-                <button class="minigames-card__button" href="#">Играть!</button>
-            </div>
-            <div class="minigames-card minigames-card_5 minigames-card_right">
-                <div class="minigames-card__heading" id="SimpleQuiz">Простая викторина</div>
-                <div class="minigames-card__text">Сыграй в популярную игру <br>против компьютера.</div>
-                <button class="minigames-card__button" href="#">Играть!</button>
-            </div>
-            <div class="minigames-card minigames-card_6 minigames-card_left">
-                <div class="minigames-card__heading" id="Randomcolorgenerator">Генератор случайных <br> цветов</div>
-                <div class="minigames-card__text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</div>
-                <button class="minigames-card__button" href="#">Играть!</button>
-             </div>
-        </article>
+        <h2 class="minigames__heading">Мини-игры</h2>
+        <div class="minigames__box">
+            <article class="minigame" id="guess_a_number">
+                <img class="minigame__img" src="img/number.jpeg" alt="Угадай число">
+                <div class="minigame__content">
+                    <h3 class="minigame__content-label" >Угадай число</h3>
+                    <p class="minigame__text minigame__text_altered">Попробуй угадать случайное<br> число от 1 до 100.</p>
+                    <button onclick="goGame()" class="minigame__content-button">Играть!</button>
+                </div>
+            </article>
+            <article class="minigame minigame_altered" id="simple_arithmetic">
+                <img class="minigame__img" src="img/arithmetic.jpeg" alt="Простая арифметика">
+                <div class="minigame__content">
+                    <h3 class="minigame__content-label" >Простая арифметика</h3>
+                    <p class="minigame__text minigame__text_altered">Попробуй решить простые арифметические задачи.</p>
+                    <button onclick="arithmetic()" class="minigame__content-button">Играть!</button>
+                </div>
+            </article>
+            <article class="minigame" id="text">
+                <img class="minigame__img" src="img/text.jpeg" alt="Переверни текст">
+                <div class="minigame__content">
+                    <h3 class="minigame__content-label" >Переверни текст</h3>
+                    <p class="minigame__text minigame__text_altered">Попробуй ввести текст, который<br> будет перевернут.</p>
+                    <button  class="minigame__content-button">Играть!</button>
+                </div> 
+            </article>
+            <article class="minigame minigame_altered" id="quiz">
+                <img class="minigame__img" src="img/quiz.jpeg" alt="Викторина">
+                <div class="minigame__content">
+                    <h3 class="minigame__content-label" >Викторина</h3>
+                    <p class="minigame__text minigame__text_altered">Отвечай на вопросы викторины с вариантами ответов.</p>
+                    <button  class="minigame__content-button">Играть!</button>
+                </div>
+            </article>
+            <article class="minigame " id="rock_paper_scisors">
+                <img class="minigame__img" src="img/rock_paper.jpeg" alt="Камень, ножницы, бумага">
+                <div class="minigame__content">
+                    <h3 class="minigame__content-label" >Камень,<br> ножницы,<br> бумага</h3>
+                    <p class="minigame__text minigame__text_altered">Сыграй в популярную игру<br> против компьютера.</p>
+                    <button  class="minigame__content-button">Играть!</button>
+                </div>
+            </article>
+            
+            <article class="minigame minigame_altered" id="color_generator">
+                <img class="minigame__img" src="img/color_generator.jpeg" alt="Генератор случайных цветов">
+                <div class="minigame__content">
+                    <h3 class="minigame__content-label" >Генератор<br> случайных<br> цветов</h3>
+                    <p class="minigame__text minigame__text_altered">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                    <button id="click_button" class="minigame__content-button">Играть!</button>
+                </div>
+            </article>
+        </div>
     </section>
     <footer class="footer center">
         <div class="footer-box">
