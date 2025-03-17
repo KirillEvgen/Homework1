@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="newItem">
+    <h1 class="Task">Task5</h1>
+    <p class="description">Lorem ipsum dolor sit amet.</p>
+    <p class="title">Lorem, ipsum dolor.</p>
+    <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="description">Lorem ipsum dolor sit amet.</p>
+    <p class="description">Lorem ipsum dolor sit amet.</p>
+    <button class="btn">Нажми</button>
+
+    <h2 class="Task">Task6</h2>
+    <button class="btn_create">Добавить</button>
+</div>
+
+    <script>
+        const description = document.querySelectorAll('.description');
+        const btn = document.querySelector('.btn');
+        btn.addEventListener('click', () => {
+            description.forEach(element => {
+                element.textContent = 'Новый текст';
+            });
+        });
+    </script>
+
+    <script>
+        const btn_create = document.querySelector('.btn_create');
+        const newItem = document.querySelector('.newItem');
+
+
+        btn_create.addEventListener('click', () => {
+         const newParagraph = document.createElement('p');
+         newParagraph.textContent = 'Новый абзац';
+         newParagraph.classList.add('text');
+
+        
+         newItem.appendChild(newParagraph);
+        });
+    </script>
+</body>
+</html>

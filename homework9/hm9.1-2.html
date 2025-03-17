@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="task">Задание 1</h1>
+    <button class="btn_task">Скрыть задание</button>
+
+
+    <p class="text">Task 2.Lorem ipsum dolor sit amet.</p>
+    <button class="btn_text">Изменить текст</button>
+
+
+
+    <script>
+        const task = document.querySelector('.task');
+        const btn_task = document.querySelector('.btn_task');
+        btn_task.addEventListener('click', () => {
+            task.style.display = task.style.display === 'none'? 'block' : 'none';
+        });
+    </script>
+
+    <script>
+        const text = document.querySelector('.text');
+        const btn_text = document.querySelector('.btn_text');
+        btn_text.addEventListener('click', () => {
+            text.style.color = 'red';
+        });
+    </script>
+</body>
+</html>
