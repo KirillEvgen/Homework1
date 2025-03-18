@@ -40,7 +40,7 @@ button {
 .header {
     background: #E1FF8F;
     background-image: url(img/star1.png), url(img/star2.png), url(img/starbig.svg);
-    background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 230% -330px;
+    background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 220% -330px;
     background-repeat: no-repeat;
     overflow: hidden;
 }
@@ -187,6 +187,7 @@ button {
     font-weight: 400;
     line-height: 32px; 
     max-width: 788px;
+    padding-bottom: 48px;
 }
 
 .game-cards {
