@@ -1,4 +1,4 @@
-@media (max-width: 425px) {
+@media (min-width:375px) and (max-width:767px) {
     .center {
         padding-left: 16px;
         padding-right: 17px; 
@@ -15,24 +15,19 @@
     }
 
     .header__house {
-        color: #202027;
-        text-align: center;
-        font-family: Montserrat;
+        width: 262px;
         font-size: 40px;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
+        line-height: 49px;
+        text-align: center;
+        padding-top: 147px;
     }
 
     .header__text {
-        color: #202027;
-        text-align: center;
-        font-family: Montserrat;
+        width: 296px;
         font-size: 16px;
-        font-style: normal;
         font-weight: 400;
-        line-height: normal;
-        max-width: 296px;
+        line-height: 20px;
     }
 
     .header__text_weight {
@@ -62,29 +57,48 @@
     }
 
     .header {
-        background: #E1FF8F;
-        background-image: url(img/star1.png), url(img/star2.png), url(img/Vectormob.svg);
-        background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 100% 0px;
-        background-repeat: no-repeat;
-        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        background-image: url(img/Vector.svg),
+            url(img/mStar1.png),
+            url(img/mStar2.png),
+            url(img/mStar3.png),
+            url(img/mStar4.png);
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+        background-size: 70%, 21px, 35px, 18px, 40px;
+        background-position: 230px -120px,
+            91px 64px,
+            37px 97px,
+            272px 557px,
+            303px 580px;
     }
 
-    .scrollbar {
-        // flex-wrap: wrap;
-        max-height: 87px;
-        overflow-x: hidden;
+    .scrollbar-box {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 24px;
+        padding-right: 24px;         
     }
 
-    .scrollbar__text {
-        font-family: "Montserrat";
-        color: rgb(32, 32, 39);
+    .scrollbar-label {
+        background-image: url(img/Starbig.png);
+            background-repeat: no-repeat;
+            background-size: 19px;
+            background-position: right;
+    }
+
+    .scrollbar-label {
+        color: black;
+        font-family: Montserrat;
         font-size: 16px;
-        font-style: normal;
         font-weight: 700;
         line-height: 110%;
+        text-align: left;
         text-transform: uppercase;
-        padding-right: 27px;
-        padding-left: 27px;
+        padding-right: 47px;
     }
 
     .scrollbar__star {
@@ -191,6 +205,20 @@
         }
 
     }
+
+    .footer {
+        height: 100px;
+    }
+
+    .footer__text {
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+
     
 
     // .games__container {
